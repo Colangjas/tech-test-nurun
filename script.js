@@ -1,4 +1,4 @@
-let ts = [-5, -4, -2, 12, -40, 4,  2, 18, 11, 5];
+let ts = [-2147483647];
 
 function computeClosestToZero(ts) {
     // Write your code here
@@ -17,7 +17,8 @@ function computeClosestToZero(ts) {
         
         return result;
     } else {
-        return 0;
+        console.error(ts[0]);
+        return ts[0];
     }
 }
 
